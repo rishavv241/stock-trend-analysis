@@ -1,0 +1,81 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ===== Body ===== */
+  body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #fef9c3);
+    color: #1f2937;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+  /* ===== Dashboard (stacked layout) ===== */
+  .dashboard {
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    gap: 32px;                /* space between cards */
+    max-width: 800px;         /* narrower for better readability */
+    margin: 32px auto;
+    padding: 0 16px;
+  }
+  
+  /* ===== Cards ===== */
+  .card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ===== Headings ===== */
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #111827;
+    font-weight: 600;
+  }
+  
+  /* ===== Dropdown ===== */
+  select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    background: #fff;
+    color: #111827;
+    transition: border 0.2s ease;
+  }
+  select:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  /* ===== Prediction Panel ===== */
+  .prediction-up {
+    color: #16a34a;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .prediction-down {
+    color: #dc2626;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .probabilities p {
+    margin-top: 4px;
+    font-size: 0.95rem;
+  }
+  
+  /* ===== Responsive ===== */
+  /* No multi-column grid anymore — each card always stacks vertically */
+  
